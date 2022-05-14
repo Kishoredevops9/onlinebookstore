@@ -4,6 +4,23 @@
   <artifactId>onlinebookstore</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+	
+<dependencies>
+	<dependency>
+  <groupId>junit</groupId>     <!-- NOT org.junit here -->
+  <artifactId>junit-dep</artifactId>
+  <version>4.8.2</version>
+  <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+<dependency>
+    <groupId>org.sonarsource.scanner.maven</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.1.1</version>
+</dependency>
+</dependencies>	
+	
+	
   <build>
     <sourceDirectory>src</sourceDirectory>
   <plugins>  
@@ -32,22 +49,7 @@
     </plugins>
   </build>
   <dependencies>
-	
-
-<dependency>
-  <groupId>junit</groupId>     <!-- NOT org.junit here -->
-  <artifactId>junit-dep</artifactId>
-  <version>4.8.2</version>
-  <scope>test</scope>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
-<dependency>
-    <groupId>org.sonarsource.scanner.maven</groupId>
-    <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.1.1</version>
-</dependency>
-
-	  
+  
   	<dependency>
   		<groupId>org.postgresql</groupId>
   		<artifactId>postgresql</artifactId>
