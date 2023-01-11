@@ -42,8 +42,11 @@
   		<artifactId>javax.servlet-api</artifactId>
   		<version>3.1.0</version>
   	</dependency>
-	  
-	  
    </dependencies>	
-	
+<distributionManagement>
+	<repository>
+		<id>onlinebookstore-snapshot-repo</id>
+		<url>http://localhost:8081/repository/onlinebookstore-snapshot-repo/</url>
+	</repository>
+</distributionManagement>
 </project>
